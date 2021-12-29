@@ -1,8 +1,8 @@
-Documentation for Image Recognition System
+# Documentation for Image Recognition System
 ------------------------------------------
 Files found at: https://github.com/pdanPOLY/Image-Recognition
 
-Summary
+## Summary
 -------
 This system uses a 3x3 Resistive Memory Array of potentiometers (in series with diodes) to replicate
 a crossbar array of memristors to encode a binary image into high and low resistance 
@@ -12,7 +12,7 @@ accepting HDMI input; USB Connection between Raspberry Pi and Arduino; MicroUSB 
 to the Raspberry Pi; various connections to get the PWM-to-DAC board connected to the crossbar
 array for stabilized voltage outputs.
 
-Tools & Technologies
+## Tools & Technologies
 --------------------
 ELEGOO UNO R3 - Arduino-based microcontroller
 LTC2645 Demo Board - PWM-to-DAC converter
@@ -29,7 +29,7 @@ Arduino IDE - Coding software for Arduino-based microcontrollers
 Python - All purpose coding software used to connect image capture and processing
 Visual Studio Code - Text editor that's useful for convenient coding
 
-Arduino Code Functionality
+## Arduino Code Functionality
 --------------------------
 Analog and Digital Pins:
 A0, A1, A2 for reading voltage drops over reference resistor in the three columns
@@ -47,7 +47,7 @@ Main loop:
 -If there was a match, the motor would turn on and the fan would spin counterclockwise
  Otherwise, the motor would be off
 
-Python Code Functionality
+## Python Code Functionality
 -------------------------
 -Imports and Installations:
 	Download Python, then type these commands in the command prompt:
@@ -74,7 +74,7 @@ Python Code Functionality
 	serially to be displayed to the user
 	When the code ends, the serial port is closed 
 
-Results
+## Results
 -------
 The system worked very well, being fully accurate except in a few cases where there were minor hardware
 disruptions leading to incorrect current readings for specific cells. It would be cool to see this system
